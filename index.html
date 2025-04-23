@@ -4,24 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLEO - Perfumes & Cuidado Personal</title>
-
-  <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fff8f0, #f6e6d9);
-      position: relative;
-      overflow-x: hidden;
+      background: linear-gradient(to bottom right, #fff8f0, #f6e6d9);
     }
-
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
     }
-
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -39,59 +32,15 @@
       z-index: 9999;
       transition: transform 0.2s;
     }
-
     .whatsapp-float:hover {
       transform: scale(1.1);
-    }
-
-    /* Dibujos de perfumes decorativos (tipo burbujas o botellas) */
-    .perfume-shape {
-      position: absolute;
-      background: rgba(242, 183, 143, 0.25);
-      border-radius: 20% 20% 10% 10%;
-      width: 100px;
-      height: 150px;
-      z-index: 0;
-    }
-
-    .perfume1 {
-      top: 100px;
-      left: -30px;
-      transform: rotate(-15deg);
-    }
-
-    .perfume2 {
-      bottom: 120px;
-      right: -40px;
-      transform: rotate(10deg);
-      background: rgba(231, 166, 203, 0.2);
-    }
-
-    .perfume3 {
-      top: 300px;
-      right: 50px;
-      width: 80px;
-      height: 130px;
-      background: rgba(179, 221, 255, 0.2);
-    }
-
-    .glass-panel {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(4px);
-      position: relative;
-      z-index: 1;
     }
   </style>
 </head>
 <body class="text-gray-800">
 
-  <!-- Fondos decorativos CSS -->
-  <div class="perfume-shape perfume1"></div>
-  <div class="perfume-shape perfume2"></div>
-  <div class="perfume-shape perfume3"></div>
-
   <!-- Encabezado -->
-  <header class="glass-panel py-6 shadow-md">
+  <header class="py-6 shadow-md bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h1 class="text-4xl text-yellow-900 font-bold tracking-wide">CLEO</h1>
       <p class="text-md text-yellow-800 italic mt-1">Perfumes y cuidado personal para mujeres y hombres con estilo</p>
@@ -99,7 +48,7 @@
   </header>
 
   <!-- Contenido principal -->
-  <main class="max-w-5xl mx-auto px-4 py-10 space-y-12 rounded-xl shadow-lg mt-6 glass-panel">
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
 
     <div class="text-center mb-6">
       <h2 class="text-3xl font-semibold text-gray-800">Colección Exclusiva 2025</h2>
@@ -107,32 +56,48 @@
     </div>
 
     <!-- Catálogo L'Bel -->
-    <section>
-      <h3 class="text-2xl text-blue-700 text-center mb-2 font-semibold">Catálogo L'Bel</h3>
-      <iframe src="catalogo_digital_lbel_202507.pdf" width="100%" height="500px" class="rounded-lg shadow-lg border"></iframe>
+    <section class="text-center">
+      <h3 class="text-2xl font-bold text-blue-600 mb-2">Catálogo L'Bel</h3>
+      <div class="bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+        <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
+        <a href="catalogo_digital_lbel_202507.pdf" target="_blank"
+           class="inline-block px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">
+          Ver Catálogo
+        </a>
+      </div>
     </section>
 
     <!-- Catálogo Ésika -->
-    <section>
-      <h3 class="text-2xl text-pink-600 text-center mb-2 font-semibold">Catálogo Ésika</h3>
-      <iframe src="catalogo_digital_esika_202507.pdf" width="100%" height="500px" class="rounded-lg shadow-lg border"></iframe>
+    <section class="text-center">
+      <h3 class="text-2xl font-bold text-pink-600 mb-2">Catálogo Ésika</h3>
+      <div class="bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+        <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
+        <a href="catalogo_digital_esika_202507.pdf" target="_blank"
+           class="inline-block px-6 py-2 bg-pink-500 text-white font-semibold rounded-full shadow hover:bg-pink-600 transition">
+          Ver Catálogo
+        </a>
+      </div>
     </section>
 
     <!-- Catálogo Cyzone -->
-    <section>
-      <h3 class="text-2xl text-purple-600 text-center mb-2 font-semibold">Catálogo Cyzone</h3>
-      <iframe src="catalogo_digital_cyzone_202507.pdf" width="100%" height="500px" class="rounded-lg shadow-lg border"></iframe>
+    <section class="text-center">
+      <h3 class="text-2xl font-bold text-purple-600 mb-2">Catálogo Cyzone</h3>
+      <div class="bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+        <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
+        <a href="catalogo_digital_cyzone_202507.pdf" target="_blank"
+           class="inline-block px-6 py-2 bg-purple-600 text-white font-semibold rounded-full shadow hover:bg-purple-700 transition">
+          Ver Catálogo
+        </a>
+      </div>
     </section>
 
   </main>
 
   <!-- WhatsApp -->
- 
-<a href="https://wa.me/51951871596?text=Hola%20CLEO%2C%20revisé%20los%20catálogos%20y%20me%20gustaría%20hacer%20un%20pedido"
-class="whatsapp-float" title="¿Necesitas ayuda? Contáctanos" target="_blank" aria-label="WhatsApp">
-<i class="fab fa-whatsapp"></i>
-</a>
-
+  <a href="https://wa.me/51951871596?text=Hola%20CLEO%2C%20revisé%20los%20catálogos%20y%20me%20gustaría%20hacer%20un%20pedido"
+     class="whatsapp-float" title="¿Necesitas ayuda? Contáctanos" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Footer -->
   <footer class="text-center text-sm text-gray-600 py-6 mt-10">
