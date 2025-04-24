@@ -35,11 +35,28 @@
     .whatsapp-float:hover {
       transform: scale(1.1);
     }
+
+    @media (min-width: 768px) {
+      .pdf-desktop {
+        display: block;
+      }
+      .pdf-mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .pdf-desktop {
+        display: none;
+      }
+      .pdf-mobile {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body class="text-gray-800">
 
-  <!-- Encabezado -->
   <header class="py-6 shadow-md bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h1 class="text-4xl text-yellow-900 font-bold tracking-wide">CLEO</h1>
@@ -47,9 +64,7 @@
     </div>
   </header>
 
-  <!-- Contenido principal -->
   <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
-
     <div class="text-center mb-6">
       <h2 class="text-3xl font-semibold text-gray-800">Colección Exclusiva 2025</h2>
       <p class="text-gray-600 text-lg mt-2">Perfumes, cremas y productos de cuidado personal de las mejores marcas: <strong>L'Bel</strong>, <strong>Ésika</strong> y <strong>Cyzone</strong>.</p>
@@ -58,10 +73,10 @@
     <!-- Catálogo L'Bel -->
     <section class="text-center">
       <h3 class="text-2xl font-bold text-blue-600 mb-4">Catálogo L'Bel</h3>
-      <div class="hidden md:block max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div class="pdf-desktop max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
         <iframe src="catalogo_digital_lbel_202507.pdf" width="100%" height="600px"></iframe>
       </div>
-      <div class="block md:hidden bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+      <div class="pdf-mobile bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
         <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
         <a href="catalogo_digital_lbel_202507.pdf" target="_blank"
            class="inline-block px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">
@@ -73,10 +88,10 @@
     <!-- Catálogo Ésika -->
     <section class="text-center">
       <h3 class="text-2xl font-bold text-pink-600 mb-4">Catálogo Ésika</h3>
-      <div class="hidden md:block max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div class="pdf-desktop max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
         <iframe src="catalogo_digital_esika_202507.pdf" width="100%" height="600px"></iframe>
       </div>
-      <div class="block md:hidden bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+      <div class="pdf-mobile bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
         <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
         <a href="catalogo_digital_esika_202507.pdf" target="_blank"
            class="inline-block px-6 py-2 bg-pink-500 text-white font-semibold rounded-full shadow hover:bg-pink-600 transition">
@@ -88,10 +103,10 @@
     <!-- Catálogo Cyzone -->
     <section class="text-center">
       <h3 class="text-2xl font-bold text-purple-600 mb-4">Catálogo Cyzone</h3>
-      <div class="hidden md:block max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div class="pdf-desktop max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
         <iframe src="catalogo_digital_cyzone_202507.pdf" width="100%" height="600px"></iframe>
       </div>
-      <div class="block md:hidden bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
+      <div class="pdf-mobile bg-white rounded-xl shadow-lg p-4 mx-auto max-w-md">
         <p class="mb-4 text-gray-700">Haz clic en el botón para ver el catálogo completo.</p>
         <a href="catalogo_digital_cyzone_202507.pdf" target="_blank"
            class="inline-block px-6 py-2 bg-purple-600 text-white font-semibold rounded-full shadow hover:bg-purple-700 transition">
@@ -99,7 +114,6 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <!-- WhatsApp -->
@@ -108,7 +122,6 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Footer -->
   <footer class="text-center text-sm text-gray-600 py-6 mt-10">
     &copy; 2025 <strong>CLEO</strong> | Fragancias y cuidado personal de lujo
   </footer>
